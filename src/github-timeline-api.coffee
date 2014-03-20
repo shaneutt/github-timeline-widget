@@ -90,7 +90,7 @@ class GitHubTimelineApi
         switch event.payload.action
           when 'opened', 'reopened'
             icon_url = 'https://github.com/images/modules/dashboard/news/issues_opened.png'
-            text = "opened issued on #{repository}"
+            text = "opened issue on #{repository}"
           when 'closed'
             icon_url = 'https://github.com/images/modules/dashboard/news/issues_closed.png'
             text = "closed issue on #{repository}"
